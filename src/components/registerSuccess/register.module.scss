@@ -1,0 +1,74 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+      // Стили для содержимого модального окна...
+      background-color: white; /* Белый фон для содержимого модального окна */
+      padding: 30px; /* Добавим немного отступов для содержимого */
+      border-radius: 16px; /* Для скругления углов */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      > h5 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #212121;
+
+      }
+      > p {
+        font-weight: 500;
+        font-size: 16px;
+        color: #767676;
+
+      }
+      &__button {
+        width: 311px;
+        height: 50px;
+        border-radius: 12px;
+        background: #212121;
+        color: #fff;
+
+      }
+    }
+  }
+  &__button {
+    margin-top: 30px;
+    width: 343px;
+    height: 52px;
+    border-radius: 12px;
+    border: none;
+  }
+
+
+  > h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+  }
+  > p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+
+  }
+}

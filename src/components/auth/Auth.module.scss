@@ -1,0 +1,68 @@
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  &__image {
+
+  }
+  &__modal {
+    text-align: center;
+    &__errorBtn {
+      width: 343px;
+      height: 54px;
+      color: #EC0000;
+      background: #fff;
+      border: 1px solid #EC0000;
+      border-radius: 12px;
+      position: absolute;
+      top: 5%;
+      right: 9%;
+      font-size: 16px;
+      font-weight: 500;
+      padding-right: 80px;
+    }
+    > h2 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 48px;
+    }
+    &__inputList {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      &__input {
+        width: 343px;
+        height: 52px;
+        border-radius: 12px;
+        font-size: 15px;
+
+        &::placeholder {
+          color: #767676;
+        }
+        :global {
+          input.ant-input::placeholder {
+            color: #767676;
+          }
+        }
+      }
+      &__button {
+        width: 343px;
+        height: 52px;
+        background: #292929;
+        color: white;
+        margin-bottom: 40px;
+        border-radius: 12px;
+      }
+      &__description {
+        color: #292929;
+
+      }
+
+    }
+  }
+}

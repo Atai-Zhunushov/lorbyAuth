@@ -1,0 +1,30 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &__button {
+    margin-top: 30px;
+    width: 343px;
+    height: 52px;
+    border-radius: 12px;
+    border: none;
+  }
+
+
+  > h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+  }
+  > p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+
+  }
+}
